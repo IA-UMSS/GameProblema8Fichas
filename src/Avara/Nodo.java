@@ -8,7 +8,6 @@ package Avara;
 /*
  * @author Angel Roman
  *         Gary Soliz
- *         Denisse Vargas
  */
 import java.util.ArrayList;
 
