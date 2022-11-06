@@ -1,11 +1,10 @@
 
 package Avara;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Avara {
+public class Avara{
 
 public static void main (String args[]){
 int[][] inicio ={{0,2,3},{1,4,5},{7,8,6}};
@@ -32,7 +31,7 @@ public static  Nodo buscarSolucion(Nodo inicio, int[][]solucion){
        int[]pcero = ubicarPosicionCero(revisar.getEstado());
        System.out.println("interacion nro; "+(++cont));
        if (Arrays.deepEquals(revisar.getEstado(), solucion)){
-        System.out.println("*******SOLUCION ENCONTRADA***");
+        System.out.println("*****SOLUCION ENCONTRADA***");
        return revisar;
        }   
     
@@ -122,7 +121,6 @@ private static int [][]clonar (int[][]estado){
 private static boolean estaEnVisitados(ArrayList<Nodo>visitados,Nodo hijo){
    for(Nodo v:visitados){
    if(Arrays.deepEquals(v.getEstado(),hijo.getEstado())){
-//       System.out.println("true");
        return true;
     }
    }
